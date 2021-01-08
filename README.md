@@ -19,5 +19,5 @@ After all create a new Angular project and connect the services and finally crea
 
 
 
-#PS: you should pay attention to all the port that there is no confusion.
+#PS: you should pay attention to all the port that there is no confusion. Postman will be used to test the CRUD of every service.
 
