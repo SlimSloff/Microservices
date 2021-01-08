@@ -1,0 +1,87 @@
+
+<br>
+<section class="login-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 login-sec">
+        <h2 class="text-center">Ajouter un Article :</h2><br>
+        <form
+          class="text-center border border-light p-5"
+          name="form"
+          (ngSubmit)="f.form.valid && onSubmit()"
+          #f="ngForm"
+          novalidate
+          class="login-form">
+
+
+          <div class="form-group">
+            <label class="text-uppercase">Description: </label>
+            <input type="text" class="form-control"
+
+                   name="name"
+                   [(ngModel)]="form.description"
+                   placeholder="description"
+                   #name="ngModel"
+            >
+          </div>
+
+
+          <div class="form-group">
+            <label class="text-uppercase">Quantité : </label>
+            <input type="number" class="form-control"
+
+                   name="name"
+                   [(ngModel)]="form.quantite"
+                   placeholder="Quantité"
+                   #username="ngModel"
+            >
+          </div>
+
+          <div class="form-group">
+            <label class="text-uppercase">Type: </label>
+            <input type="email" class="form-control"
+
+                   name="name"
+                   [(ngModel)]="form.type"
+                   placeholder="type"
+                   #email="ngModel"
+            >
+          </div>
+
+
+
+
+
+
+          <ul>
+
+            <button  type="submit" class="btn btn-success" >Submit</button>
+
+          </ul>
+        </form>
+        <button (click)="back()"  class="btn btn-primary" > Précedent</button>
+
+
+
+
+      </div>
+      <div class="col-md-8 banner-sec">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="banner-text">
+                  <h2>This is Heaven</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+

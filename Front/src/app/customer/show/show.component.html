@@ -1,0 +1,28 @@
+<br>
+<h1> Liste des Clients :</h1> <br><br>
+<table class="table table-striped"style="width: 97%;margin: 0.5cm;">
+  <thead style="margin-left: 2cm;">
+  <th>Nom</th>
+  <th>Nom d'utilisateur</th>
+  <th>Email</th>  <th>Adresse</th>
+  <th>Supprimer</th>
+  <th>Modifier</th>
+  </thead>
+  <tr  *ngFor="let hero of users">
+    <td>{{hero.name}}</td>
+    <td>{{hero.username}}</td>
+    <td>{{hero.email}}</td>
+    <td>{{hero.adress}}</td>
+    <td>
+      <button (click)="delete(hero.id)" class="btn btn-danger">Supprimer</button></td>
+    <td>
+      <button (click)="update(hero.id)" class="btn btn-info">Modifier</button>
+    </td>
+
+
+
+
+  </tr>
+
+</table>
+<a href="/Add" class="nav-link" routerLink="add">Ajouter Client</a>

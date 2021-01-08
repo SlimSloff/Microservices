@@ -1,0 +1,31 @@
+
+<br>
+<h1> Liste des fournisseurs :</h1> <br><br>
+<table class="table table-striped"style="width: 97%;margin: 0.5cm;">
+  <thead style="margin-left: 2cm;">
+  <th>Nom</th>
+  <th>Email</th>
+  <th>Mobile</th>
+  <th>Supprimer</th>
+  <th>Modifier</th>
+
+  </thead>
+  <tr  *ngFor="let hero of users">
+    <td>{{hero.nomf}}</td>
+    <td>{{hero.mobile}}</td>
+    <td>{{hero.email}}</td>
+
+
+    <td>
+      <button (click)="delete(hero.id)" class="btn btn-danger">Supprimer</button></td>
+    <td>
+      <button (click)="update(hero.id)"class="btn btn-info">Modifier</button>
+    </td>
+
+
+
+
+  </tr>
+
+</table>
+<a href="/Add" class="nav-link" routerLink="add">Ajouter Fournisseur</a>
